@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#
+# QUESTAO 2
+
 # Escreva um Shell Script que ordene dois números inteiros digitados
 # pelo usuário. Tal ordenação deve ser em
 # ordem crescente ou ordem decrescente.
@@ -9,7 +10,7 @@
 # dois números. Este script deve sempre apresentar
 # os números ordenados para o usuário de acordo com o tipo de
 # ordenação escolhida pelo mesmo.
-#
+
 
 
 #imprime uma dica de como utilizar o scripts

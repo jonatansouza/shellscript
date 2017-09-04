@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#QUESTAO 3
+
 #Faça um Shell Script que inverta uma matriz 3x3 de inteiros. Ou seja, apresente a matriz transposta. Inicialize a
 #matriz com valores (números inteiros) digitados pelo usuário. O usuário pode, por exemplo, inserir em “Matriz” os
 #valores abaixo e o script reorganizaria os valores gerando a “Matriz Transposta”:

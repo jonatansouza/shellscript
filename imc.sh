@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#QUESTAO 4
+
 #Crie um Shell Script que calcule o Índice de Massa Corpórea (IMC) de uma pessoa de acordo com a fórmula a
 # seguir: peso / altura * altura
 #O Script deve pedir por parâmetro da linha de comando o peso e a altura de uma pessoa e retornar o valor de IMC,
