@@ -14,6 +14,7 @@ function helpMessage(){
 
 #faz um check atraves de uma expressao regular se o parametro e um numero
 function isNumber(){
+  #expressao regular para verificar
   validateExpression='^[0-9]+$'
   if [[ $1 =~ $validateExpression ]] ; then
    echo "1";
@@ -27,5 +28,6 @@ if [[ $# -ne 2 ]] || [[ ! $(isNumber $1) ]];
     helpMessage
   exit 1
 fi
-
+#retorna o resultado do imc
 echo "seu imc é: $(echo "$1/($2*$2)" | bc)"
+#o bash por padrao nao utiliza float foi necessario utilizar a ferramenta bc

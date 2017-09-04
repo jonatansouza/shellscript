@@ -9,11 +9,12 @@
 #colunas a serem invertidas.
 
 echo "###### matriz transposta 3X3 ######"
-
+#declaração de matrizes
 echo "Digite os valores (numero inteiro) para preencher a matriz 3 x 3"
 declare -A matrix
 declare -A transpose_matrix
 
+#loop para preencher a matrix com dados do usuario
 for i in {0..2}; do
   for j in {0..2}; do
     read val
@@ -21,12 +22,14 @@ for i in {0..2}; do
   done
 done
 
+#loop que preenche a matriz transposta
 for i in `seq 0 2`; do
   for j in `seq 0 2`; do
     transpose_matrix[$j, $i]=${matrix[$i, $j]}
   done
 done
 
+#imprime a matriz digitada pelo usuario
 echo -e "\nMatriz Digitada:"
 for i in `seq 0 2`; do
   for j in `seq 0 2`; do
@@ -35,6 +38,7 @@ for i in `seq 0 2`; do
   printf "\n"
 done
 
+#imprime a matriz transposta
 echo -e "\nMatriz transposta:"
 for i in `seq 0 2`; do
   for j in `seq 0 2`; do
@@ -42,3 +46,6 @@ for i in `seq 0 2`; do
   done
   printf "\n"
 done
+
+#foi utilizado um printf em alguns casos para
+#tratar a quebra de linha para melhor apresentação dos resultados

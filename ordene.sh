@@ -34,7 +34,7 @@ if [[ $# -ne 3 ]] || [[ ! $(isNumber $1) ]] || [[ ! $(isNumber $2) ]];
   exit 1
 fi
 
-#FAZ A OPERAÇAO
+#FAZ A OPERAÇAO verificando qual opcao do usuario (ex -c crescente -d decrescente)
 case $3 in
     -c)
     echo "A ordem crescente é: "
